@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use http\Env\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class NitroController extends Controller
