@@ -78,7 +78,7 @@
         }, 15000); //15000 = 15 seconds
 
         function getOnlineUserCount() {
-            fetch('{{ route('api.online-count') }}')
+            fetch('https://habbis.nl/api/online-count')
                 .then(function (response) {
                     return response.json();
                 })

@@ -1,5 +1,8 @@
 /node_modules
 /public/build
+/public/nitro
+/public/Nitro-cdn
+/public/saved-figures
 /public/hot
 /public/client
 /public/storage
