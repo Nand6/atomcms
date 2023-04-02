@@ -151,7 +151,7 @@
                         <div class="grid grid-cols-4 xl:grid-cols-6 gap-2 xl:pl-3">
                             @forelse($friends as $friend)
                                 <a href="{{ route('profile.show', $friend->user->username ?? 'SystemAccount') }}" class="h-[70px] w-[70px] rounded-full border-2 dark:border-gray-700 overflow-hidden flex items-center p-1 rounded-md cursor-pointer friend" data-tippy-content="{{ $friend->user->username ?? 'Unknown' }}">
-                                    <img class="mt-6 transition ease-in-out duration-200 hover:scale-110" src="{{ setting('avatar_imager') }}?figure={{ $friend->user?->look }}" alt="">
+                                    <img class="mt-6 transition ease-in-out duration-200 hover:scale-110" src="{{ setting('avatar_imager') }}{{ $friend->user?->look }}" alt="">
                                 </a>
                             @empty
                                 <div class="col-span-6">

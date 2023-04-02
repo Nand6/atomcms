@@ -1,5 +1,6 @@
-<div class="w-full h-52 relative flex items-center justify-center header-bg" style="background: url({{ setting('cms_header') }});">
+<div class="w-full h-52 relative flex items-center justify-center header-bg overflow-hidden" style="background: url({{ setting('cms_header') }});">
     <div class="w-full h-full bg-black absolute bg-opacity-50"></div>
+	<div style="background: url(/assets/images/hotel.png) no-repeat center -178px; height: 255px; position: absolute; width: 455px; right: 26%; top: 0px; opacity: .6;"></div>
 
     @auth
         <div class="max-w-7xl relative h-full w-full flex items-center justify-center md:justify-between pr-10">

@@ -7,8 +7,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ setting('hotel_name') }} - @stack('title')</title>
+		
+		<meta name="vindretros" content="l2czNtDkfn9nIqSkUFgkqPovjSIGUXWA" />
 
-        <link rel="icon" type="image/gif" sizes="18x17" href="{{ asset('assets/images/home_icon.gif') }}">
+        <link rel="icon" type="image/gif" sizes="18x17" href="{{ asset('assets/images/habbis_icon.ico') }}">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -23,6 +25,31 @@
 
         @vite(['resources/themes/atom/css/app.css', 'resources/themes/atom/js/app.js'])
         @stack('scripts')
+		
+		<script type="text/javascript">
+			console.log(`
+                                                                                                                             
+                                                                                                                             
+HHHHHHHHH     HHHHHHHHH               AAA               BBBBBBBBBBBBBBBBB   BBBBBBBBBBBBBBBBB   IIIIIIIIII   SSSSSSSSSSSSSSS 
+H:::::::H     H:::::::H              A:::A              B::::::::::::::::B  B::::::::::::::::B  I::::::::I SS:::::::::::::::S
+H:::::::H     H:::::::H             A:::::A             B::::::BBBBBB:::::B B::::::BBBBBB:::::B I::::::::IS:::::SSSSSS::::::S
+HH::::::H     H::::::HH            A:::::::A            BB:::::B     B:::::BBB:::::B     B:::::BII::::::IIS:::::S     SSSSSSS
+  H:::::H     H:::::H             A:::::::::A             B::::B     B:::::B  B::::B     B:::::B  I::::I  S:::::S            
+  H:::::H     H:::::H            A:::::A:::::A            B::::B     B:::::B  B::::B     B:::::B  I::::I  S:::::S            
+  H::::::HHHHH::::::H           A:::::A A:::::A           B::::BBBBBB:::::B   B::::BBBBBB:::::B   I::::I   S::::SSSS         
+  H:::::::::::::::::H          A:::::A   A:::::A          B:::::::::::::BB    B:::::::::::::BB    I::::I    SS::::::SSSSS    
+  H:::::::::::::::::H         A:::::A     A:::::A         B::::BBBBBB:::::B   B::::BBBBBB:::::B   I::::I      SSS::::::::SS  
+  H::::::HHHHH::::::H        A:::::AAAAAAAAA:::::A        B::::B     B:::::B  B::::B     B:::::B  I::::I         SSSSSS::::S 
+  H:::::H     H:::::H       A:::::::::::::::::::::A       B::::B     B:::::B  B::::B     B:::::B  I::::I              S:::::S
+  H:::::H     H:::::H      A:::::AAAAAAAAAAAAA:::::A      B::::B     B:::::B  B::::B     B:::::B  I::::I              S:::::S
+HH::::::H     H::::::HH   A:::::A             A:::::A   BB:::::BBBBBB::::::BBB:::::BBBBBB::::::BII::::::IISSSSSSS     S:::::S
+H:::::::H     H:::::::H  A:::::A               A:::::A  B:::::::::::::::::B B:::::::::::::::::B I::::::::IS::::::SSSSSS:::::S
+H:::::::H     H:::::::H A:::::A                 A:::::A B::::::::::::::::B  B::::::::::::::::B  I::::::::IS:::::::::::::::SS 
+HHHHHHHHH     HHHHHHHHHAAAAAAA                   AAAAAAABBBBBBBBBBBBBBBBB   BBBBBBBBBBBBBBBBB   IIIIIIIIII SSSSSSSSSSSSSSS   
+
+
+`);
+		</script>
     </head>
 
     <body class="flex flex-col min-h-screen site-bg dark:bg-gray-800">
@@ -74,5 +101,7 @@
         @endif
 
         @stack('javascript')
+	
+		</script>
     </body>
 </html>

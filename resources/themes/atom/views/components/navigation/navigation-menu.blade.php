@@ -1,4 +1,4 @@
-<div class="hidden relative w-full h-full flex flex-col items-center gap-y-2 py-3 md:flex md:flex-row md:gap-x-8 md:gap-y-0 md:py-0" id="mobile-menu">
+<div class="hidden relative w-full h-full flex absolute flex-col items-center gap-y-2 py-3 md:flex md:flex-row md:gap-x-8 md:gap-y-0 md:py-0" id="mobile-menu">
         @if (auth()->check())
         <button
             id="homeDropdown"
