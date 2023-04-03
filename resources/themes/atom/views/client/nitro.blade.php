@@ -39,7 +39,7 @@
 
 <iframe
     id="nitro"
-    src="{{ sprintf('%s/index.html?sso=%s', config('habbo.client.nitro_path'), $sso) }}"
+    src="{{ route('client') }}"
     class="border-none overflow-hidden h-full w-full m-0 p-0 absolute top-0 left-0"></iframe>
 
 {{-- Show disconnected message on client if the user has been disconnected --}}

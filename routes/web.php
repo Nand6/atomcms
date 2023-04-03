@@ -102,11 +102,15 @@ Route::middleware(['maintenance', 'check-ban', 'force.staff.2fa'])->group(functi
         Route::get('/shop', ShopController::class)->name('shop.index');
 
         // Paypal routes
+		
+		
+        // nitro index
+        Route::get('/client', [NitroController::class, 'client'])->name('client');
 
 
         // Client route
         Route::prefix('game')->middleware(['findretros.redirect', 'vpn.checker'])->group(function () {
-            Route::get('/nitro', NitroController::class)->name('nitro-client');
+			Route::get('/nitro', [NitroController::class, 'index'])->name('nitro-client');
             Route::get('/flash', FlashController::class)->name('flash-client');
         });
     });
